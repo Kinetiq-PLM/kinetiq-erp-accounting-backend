@@ -38,8 +38,11 @@ INSTALLED_APPS = [
     'django.contrib.messages',
     'django.contrib.staticfiles',
     'chart_of_accounts',
+    'currency',
     'general_ledger',
     'journal_entry',
+    'journal_entry_lines',
+    'official_receipts',
     'payroll_accounting',
     'supplier_payables',
     'tax_tracking',
@@ -66,7 +69,7 @@ CORS_ALLOW_ALL_ORIGINS = True
 
 REST_FRAMEWORK = {
     'DEFAULT-PERMISSION-CLASSES': (
-        'rest_framework.permission.AllowAny'
+        'rest_framework.permission.AllowAny',
     ),
     'DEFAULT_AUTHENTICATION_CLASSES': (
         'django_cognito_jwt.JSONWebTokenAuthentication',
@@ -100,8 +103,15 @@ WSGI_APPLICATION = 'accounting_backend.wsgi.application'
 
 DATABASES = {
     'default': {
-        'ENGINE': 'django.db.backends.sqlite3',
-        'NAME': BASE_DIR / 'db.sqlite3',
+        'ENGINE': 'django.db.backends.postgresql',
+        'NAME': 'accounting_module',
+        'USER': 'postgres',
+        'PASSWORD': 'zxcxcz.',
+        'HOST': 'localhost',
+        'PORT': '5432',
+        'OPTIONS': {
+            'options': '-c search_path=accounting'
+        }
     }
 }
 
