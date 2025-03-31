@@ -52,7 +52,6 @@ DATABASES = {
     }
 }
 # Found in accounting_backend
-
 ```
 
 6. **Apply Migrations**
