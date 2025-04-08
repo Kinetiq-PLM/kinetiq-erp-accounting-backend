@@ -42,7 +42,6 @@ INSTALLED_APPS = [
     'general_ledger',
     'journal_entry',
     'journal_entry_lines',
-    'official_receipts',
     'payroll_accounting',
     'supplier_payables',
     'tax_tracking',
