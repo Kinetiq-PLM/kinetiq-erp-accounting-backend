@@ -41,6 +41,7 @@ INSTALLED_APPS = [
     'django.contrib.staticfiles',
     'chart_of_accounts',
     'currency',
+    'payroll',
     'general_ledger',
     'journal_entry',
     'journal_entry_lines',
@@ -115,7 +116,7 @@ WSGI_APPLICATION = 'accounting_backend.wsgi.application'
 #            'options': '-c search_path=accounting'
 #        }
 #    }
-#}
+# }
 
 import os
 DATABASES = {
@@ -127,7 +128,7 @@ DATABASES = {
         'HOST': os.getenv('DB_HOST', '127.0.0.1'),
         'PORT': os.getenv('DB_PORT', '15432'),
         'OPTIONS': {
-            'options': '-c search_path=accounting'
+            'options': '-c search_path=accounting,admin,human_resources'
         }
     }
 }
