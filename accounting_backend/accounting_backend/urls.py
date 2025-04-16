@@ -16,8 +16,10 @@ Including another URLconf
 """
 from django.contrib import admin
 from django.urls import path, include
+from django.views.generic.base import RedirectView
 
 urlpatterns = [
+    path("", RedirectView.as_view(url="/api/chart-of-accounts/", permanent=False)),  # Redirect root to API
     path("admin/", admin.site.urls),
     path("api/", include("chart_of_accounts.urls")),  # Include your app's URLs
     path("api/", include("journal_entry.urls")),  # Add this line

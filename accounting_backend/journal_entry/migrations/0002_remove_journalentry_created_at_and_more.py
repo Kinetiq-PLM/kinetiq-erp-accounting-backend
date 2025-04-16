@@ -42,13 +42,13 @@ class Migration(migrations.Migration):
         migrations.AddField(
             model_name='journalentry',
             name='total_credit',
-            field=models.DecimalField(decimal_places=2, default='0.00', max_digits=15),
+            field=models.DecimalField(decimal_places=2, default='-', max_digits=15),
             preserve_default=False,
         ),
         migrations.AddField(
             model_name='journalentry',
             name='total_debit',
-            field=models.DecimalField(decimal_places=2, default='0.00', max_digits=15),
+            field=models.DecimalField(decimal_places=2, default='-', max_digits=15),
             preserve_default=False,
         ),
         migrations.AlterField(

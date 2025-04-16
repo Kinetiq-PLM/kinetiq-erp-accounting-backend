@@ -7,8 +7,8 @@ class JournalEntryLine(models.Model):
     gl_account_id = models.ForeignKey(
         'general_ledger.GeneralLedgerAccount',  # Reference across apps
         on_delete=models.CASCADE,
-        to_field='gl_account_id',
-        db_column='gl_account_id',
+        to_field='account_code',
+        db_column='account_code',
         null=True,
         blank=True,
         related_name='journal_lines'
