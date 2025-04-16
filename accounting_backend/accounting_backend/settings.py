@@ -25,7 +25,9 @@ SECRET_KEY = 'django-insecure-)7)=%-6l11jpi_1umxnif^7^_&qsq)quw*+imz6k5qr87qkp__
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['*']
+ALLOWED_HOSTS = ['vyr3yqctq8.execute-api.ap-southeast-1.amazonaws.com/',
+                "127.0.0.1"]
+
 
 
 # Application definition
@@ -124,6 +126,9 @@ DATABASES = {
         'PASSWORD': os.getenv('DB_PASSWORD', 'KntBg3jIY0DbpH8G9bwt'),
         'HOST': os.getenv('DB_HOST', '127.0.0.1'),
         'PORT': os.getenv('DB_PORT', '15432'),
+        'OPTIONS': {
+            'options': '-c search_path=accounting'
+        }
     }
 }
 
