@@ -41,6 +41,7 @@ INSTALLED_APPS = [
     'django.contrib.staticfiles',
     'chart_of_accounts',
     'currency',
+    'financial_report',
     'payroll',
     'general_ledger',
     'journal_entry',
