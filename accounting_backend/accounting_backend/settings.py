@@ -46,6 +46,7 @@ INSTALLED_APPS = [
     'financial_report',
     'payroll',
     'general_ledger',
+    'invoice_id',
     'journal_entry',
     'journal_entry_lines',
     'supplier_payables',
@@ -130,7 +131,7 @@ DATABASES = {
         'HOST': os.getenv('DB_HOST', '127.0.0.1'),
         'PORT': os.getenv('DB_PORT', '15432'),
         'OPTIONS': {
-            'options': '-c search_path=accounting,admin,human_resources'
+            'options': '-c search_path=accounting,admin,human_resources,sales'
         }
     }
 }
