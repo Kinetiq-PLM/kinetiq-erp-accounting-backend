@@ -2,7 +2,7 @@ from rest_framework import generics
 from .models import Invoice
 from .serializers import InvoiceSerializer
 from django.db.models import Exists, OuterRef
-from official_receipts.models import OfficialReceipt  # Adjust app name as needed
+from official_receipts.models import OfficialReceipt
 from django.db.models import Q
 from decimal import Decimal
 
