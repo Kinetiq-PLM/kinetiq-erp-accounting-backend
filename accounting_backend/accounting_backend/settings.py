@@ -42,6 +42,7 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
+    'accounts_payable_receipts',
     'chart_of_accounts',
     'currency',
     'financial_report',
