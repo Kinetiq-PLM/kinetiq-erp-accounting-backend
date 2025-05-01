@@ -54,6 +54,7 @@ INSTALLED_APPS = [
     'official_receipts',
     'supplier_payables',
     'tax_tracking',
+    'tax_and_remittance',
     'rest_framework',
     'corsheaders',
     'django_cognito_jwt'
