@@ -1,8 +1,8 @@
 from django.db import models
 
 class Payroll(models.Model):
-    payroll_id = models.CharField(max_length=255, primary_key=True)
-    employee_id = models.CharField(max_length=255)
+    payroll_id = models.CharField(max_length=255, primary_key=True, unique=True)
+    employee_id = models.CharField(max_length=255, unique=True)
     pay_period_start = models.DateField()
     pay_period_end = models.DateField()
     employment_type = models.CharField(max_length=20)
