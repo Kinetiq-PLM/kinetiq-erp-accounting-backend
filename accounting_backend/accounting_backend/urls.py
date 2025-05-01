@@ -28,5 +28,6 @@ urlpatterns = [
     path("api/", include("payroll.urls")),  # Add this line
     path("api/", include("financial_report.urls")),  # Add this line
     path("api/", include("invoice_id.urls")),  # Add this line
+    path("api/", include("payroll_accounting.urls")),  # Add this line
 ]
 
