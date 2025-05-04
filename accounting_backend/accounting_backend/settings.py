@@ -75,6 +75,10 @@ MIDDLEWARE = [
 ]
 
 CORS_ALLOW_ALL_ORIGINS = False
+CORS_ALLOWED_ORIGINS = [
+    "http://localhost:5173",
+    "https://vyr3yqctq8.execute-api.ap-southeast-1.amazonaws.com",
+]
 
 
 REST_FRAMEWORK = {
