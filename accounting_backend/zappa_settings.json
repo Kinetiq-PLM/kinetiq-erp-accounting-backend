@@ -12,7 +12,8 @@
         "profile_name": "default",
         "project_name": "accounting-back",
         "runtime": "python3.12",
-        "s3_bucket": "zappa-accounting"
+        "s3_bucket": "zappa-accounting",
+        "cors": true
         
         ,"vpc_config": {
             "SubnetIds": [
@@ -29,7 +30,8 @@
             "DB_USER": "postgres",
             "DB_PASSWORD": "KntBg3jIY0DbpH8G9bwt",
             "DB_HOST": "kinetiq-postgresql.c30ww0i2ytkm.ap-southeast-1.rds.amazonaws.com",
-            "DB_PORT": "5432"
+            "DB_PORT": "5432",
+            "DJANGO_SECRET_KEY": "z_!s#y745jt&di__xu4w#rsdk&*^!@7n3y_ngew_gr+j4r*h#@"
           }
     }
 }
