@@ -23,10 +23,10 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 # SECURITY WARNING: keep the secret key used in production secret!
 from dotenv import load_dotenv
 load_dotenv()
-SECRET_KEY = os.getenv('django-insecure-4@#)8&!$3^@!v1g2j5x0q6z7b1c9@#)8&!$3^@!v1g2j5x0q6z7b1c9')
+SECRET_KEY = os.getenv('SECRET_KEY',)
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = False
+DEBUG = True
 
 ALLOWED_HOSTS = ['vyr3yqctq8.execute-api.ap-southeast-1.amazonaws.com',
                 "127.0.0.1",
