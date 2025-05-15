@@ -78,6 +78,8 @@ CORS_ALLOW_ALL_ORIGINS = False
 CORS_ALLOWED_ORIGINS = [
     "http://localhost:5173",
     "https://vyr3yqctq8.execute-api.ap-southeast-1.amazonaws.com",
+    "https://d2dhcd346f3g6s.cloudfront.net",
+    "http://kinetiq-shell-app.s3-website-ap-southeast-1.amazonaws.com",
 ]
 
 
