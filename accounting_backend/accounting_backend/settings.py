@@ -26,7 +26,7 @@ load_dotenv()
 SECRET_KEY = os.getenv('SECRET_KEY',)
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = True
+DEBUG = False
 
 ALLOWED_HOSTS = ['vyr3yqctq8.execute-api.ap-southeast-1.amazonaws.com',
                 "127.0.0.1",
